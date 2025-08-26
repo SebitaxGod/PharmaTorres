@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Estilos de emergencia en caso de que Tailwind no cargue */
+.bg-green-500 {
+  background-color: #10b981 !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.p-8 {
+  padding: 2rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-4xl {
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.mt-4 {
+  margin-top: 1rem !important;
+}
+
+.min-h-screen {
+  min-height: 100vh !important;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+.py-16 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.px-6 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.mb-12 {
+  margin-bottom: 3rem !important;
+}
+
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.max-w-2xl {
+  max-width: 42rem !important;
+}
