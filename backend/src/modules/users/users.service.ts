@@ -14,16 +14,9 @@ export class UsersService {
   ) {}
 
   async create(createUserDto: CreateUserDto): Promise<User> {
-    const { password, ...userData } = createUserDto;
-    
-    // Hash the password
-    const saltRounds = 10;
-    const hashedPassword = await bcrypt.hash(password, saltRounds);
-
-    const user = this.usersRepository.create({
-      ...userData,
-      password: hashedPassword,
-    });
+    // La contraseña ya viene hasheada desde auth.service.ts
+    // No necesitamos hashearla de nuevo aquí
+    const user = this.usersRepository.create(createUserDto);
 
     return await this.usersRepository.save(user);
   }
